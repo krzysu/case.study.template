@@ -1,9 +1,9 @@
 # case study template
 
 description: __case study page template build in haml/sass/coffee thanks to middleman app__  
-version: 0.1
-download: clone this repo
-demo: will be
+version: 0.1  
+download: clone this repo  
+demo: will be  
 
 
 ## How to use?
@@ -21,4 +21,4 @@ demo: will be
 * * *
 Copyright (c) 2012 Krzysztof Urbas (@krzysu).
 
-__case.study.template__ are available under the MIT license.
+__case.study.template__ is available under the MIT license.
