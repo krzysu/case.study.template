@@ -1,8 +1,7 @@
 # case study template
 
 description: __case study page template build in haml/sass/coffee thanks to middleman app__  
-version: 0.1  
-download: clone this repo  
+version: 0.1   
 demo: will be  
 
 

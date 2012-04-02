@@ -1,0 +1,37 @@
+.wrapper {
+  width: 900px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 100px;
+
+  h1 {
+    font-size: 4em;
+    line-height: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+    line-height: 1.5em;
+
+    border: 1px solid $color-base;
+    border-left: 0;
+    border-right: 0;
+    padding: 0 1em;
+    display: inline-block;
+  }
+}
+
+section {
+  @include pie-clearfix;
+  margin-bottom: 100px;
+
+  img {
+    float: right;
+    margin: 0 0 2em 2em;
+  }
+}
