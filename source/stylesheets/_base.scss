@@ -18,12 +18,26 @@ h1 {
 }
 
 h2 {
-  font-size: 1.4em;
   font-family: $font-subheader;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  text-align: center;
+
+  border: 1px solid $color-base;
+  border-left: 0;
+  border-right: 0;
+  padding: 0 1em;
+}
+
+h3 {
+  font-style: italic;
+  font-family: Georgia, serif;
 }
 
 /* links */
-a { color: $color-alt; }
-a:visited { color: $color-alt; }
-a:hover { color: $color-alt; }
+a {
+  color: $color-alt;
+  @include hover-link;
+}
+
 a:focus, a:hover, a:active { outline: 0; }

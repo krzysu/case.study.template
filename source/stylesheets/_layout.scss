@@ -15,23 +15,39 @@ header {
   }
 
   h2 {
-    font-size: 1.3em;
-    line-height: 1.5em;
-
-    border: 1px solid $color-base;
-    border-left: 0;
-    border-right: 0;
-    padding: 0 1em;
     display: inline-block;
+    margin-bottom: 20px;
   }
 }
 
 section {
   @include pie-clearfix;
   margin-bottom: 100px;
+}
 
+.img-box {
   img {
-    float: right;
-    margin: 0 0 2em 2em;
+    width: 100%;
+  }
+}
+
+footer {
+  margin: 200px 0;
+
+  h2 {
+    font-size: 2em;
+    margin-bottom: 200px;
+  }
+
+  section {
+    @extend .with-columns;
+
+    .social-box {
+      @extend .one-from-three;
+    }
+
+    .form-box {
+      @extend .two-from-three;
+    }
   }
 }

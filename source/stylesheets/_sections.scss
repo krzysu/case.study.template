@@ -1,0 +1,20 @@
+.section-one, .section-three {
+  @extend .with-columns;
+
+  .desc-box {
+    @extend .one-from-three;
+  }
+
+  .img-box {
+    @extend .two-from-three;
+  }
+}
+
+.section-two {
+  @extend .with-columns;
+
+  .list, .img-box {
+    @extend .one-from-three;
+  }
+}
+
