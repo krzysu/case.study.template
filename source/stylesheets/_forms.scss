@@ -4,7 +4,7 @@ button, input, select, textarea {
   color: $color-base;
 }
 
-input[type="text"], select, textarea { 
+input[type="text"], input[type="email"], select, textarea { 
   border: 1px solid $color-border-form;
   outline: 0;
   background: #fff;
@@ -13,9 +13,11 @@ input[type="text"], select, textarea {
   
   @include box-sizing(border-box);
   -moz-box-sizing: border-box;
+
+  width: 100%;
 }
 
-input[type="text"], textarea {
+input[type="text"], input[type="email"], textarea {
   padding: 5px;
 }
 
@@ -23,28 +25,26 @@ select {
   padding: 4px;
 }
 
-input[type="text"]:focus, input[type="text"]:active, select:focus, select:active {
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+input:focus, input:active, select:focus, select:active {
   border-color: $color-border-form-active;
 }
 
 label {
   font-weight: bold;
-  font-size: 0.929em;
   margin-bottom: 3px;
 }
 
 label.checkbox {
   font-weight: normal;
-  font-size: 1em;
   margin: 0 0 0 5px;
 }
 
-.required {
-  &:before {
-    content: '* ';
-    color: $color-base;
-    font-weight: bold;
-  }
+// form layout
+form > div {
+  margin-bottom: 30px;
 }
-
-

@@ -8,14 +8,21 @@
       social bookmarks
 
     .form-box
-      %div
-        %label{:for => 'email-field'} Your Email
-        %input#email-field{:type => 'text'}
-      %div
-        %label{:for => 'message-field'} Your Message
-        %textarea#message-field
-          You can just say 'Hi'
-      %div
-        %a.button{:href => '#'} Send it!
+      %form
+
+        %div
+          %label{:for => 'email-field'} Your Email
+          .input-box
+            %input#email-field{:type => 'email', :placeholder => "I won't spam you :)", :required => true}
+        %div
+          %label{:for => 'message-field'} Your Message
+          .input-box
+            %textarea#message-field{:placeholder => "You can just say 'Hi'", :required => true}
+        %div
+          %button.button{:href => '#'} Send it!
 
     
+%small
+  build on
+  %a{:href => 'https://github.com/krzysu/case.study.template'} case.study.template
+  by Krzysztof Urbas (@krzysu)
