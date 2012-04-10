@@ -27,18 +27,6 @@ footer {
     font-size: 2em;
     margin-bottom: 200px;
   }
-
-  section {
-    @extend .with-columns;
-
-    .social-box {
-      @extend .one-from-three;
-    }
-
-    .form-box {
-      @extend .two-from-three;
-    }
-  }
 }
 
 small {

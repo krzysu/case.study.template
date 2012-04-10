@@ -22,3 +22,30 @@
 
 }
 
+footer section {
+  @extend .with-columns;
+
+  .about-box {
+    @extend .two-from-three;
+  }
+
+  .social-box {
+    @extend .one-from-three;
+  }
+
+  img {
+    float: left;
+    display: block;
+    border: 2px solid $color-base;
+    padding: 2px;
+    margin: 0 1em 1em 0;
+  }
+
+  strong {
+    font-size: 1.2em;
+  }
+
+  em {
+    font-weight: bold;
+  }
+}

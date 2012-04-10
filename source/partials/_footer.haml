@@ -1,25 +1,22 @@
 %footer
   %h2 Do you like it?
 
-  %section.with-two-columns
-    %h1 Contact me
+  %section
+    
+    .about-box
+      %h1 About
+      %article
+        %img{:src => 'http://www.gravatar.com/avatar/c06a7fc686bc021258d1bf34c3397b6e?s=140', :alt => 'author photo'}
+        :markdown
+          **Krzysztof Urbas**, front-end programmer, UX designer, bass player.
+
+          I am enthusiastic web developer, who can never stop exploring news in web-world. I am continually expand my skills and I am never afraid of new technologies. My everyday work consist of getting to know the problem, finding solution, building prototypes and then programming web front-end. I use *HTML5* and all *CSS3* power supported by *JavaScript* magic to develop nice looking, usable and human friendly interfaces. I especially fond of Ruby world because of a lot nice tools which make my work easier, like *HAML, SASS* and *CoffeeScript*. I am also *startups* and agile project management fan.
 
     .social-box
-      social bookmarks
-
-    .form-box
-      %form
-
-        %div
-          %label{:for => 'email-field'} Your Email
-          .input-box
-            %input#email-field{:type => 'email', :placeholder => "I won't spam you :)", :required => true}
-        %div
-          %label{:for => 'message-field'} Your Message
-          .input-box
-            %textarea#message-field{:placeholder => "You can just say 'Hi'", :required => true}
-        %div
-          %button.button{:href => '#'} Send it!
+      %h1 Contact
+      %ul
+        %li
+          %a{:href => '#'} some social link
 
     
 %small

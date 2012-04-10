@@ -1,7 +1,6 @@
 source "http://rubygems.org"
 
 gem "middleman"
-# gem 'jasmine'
 
 # windows
 # gem 'rb-fchange'
