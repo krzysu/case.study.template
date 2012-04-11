@@ -1,0 +1,1 @@
+((function(){CaseStudy.AutoScroller=function(){function a(){}return a.prototype.scrollTo=function(a){var b;return b=$(a).offset().top-100,$("html:not(:animated), body:not(:animated)").animate({scrollTop:b},"normal")},a}()})).call(this)

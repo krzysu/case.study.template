@@ -1,0 +1,1 @@
+((function(){var a;$(function(){return new a}),a=function(){function a(){this.autoScroller=new CaseStudy.AutoScroller,this.initInternalLinks()}return a.prototype.initInternalLinks=function(){var a=this;return $("a.internal").on("click",function(b){var c;return b.preventDefault(),c=$(b.target).attr("href"),a.autoScroller.scrollTo(c)})},a}()})).call(this)
