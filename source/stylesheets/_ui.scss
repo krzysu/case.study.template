@@ -66,3 +66,46 @@ section {
     background-image: image-url('google_talk.svg');
   }
 }
+
+@mixin dark-tooltip($direction: 'left') {
+  background: $color-base;
+  @include border-radius(4px);
+  padding: 4px 8px;
+  
+  text-align: center;
+  font-size: 14px;
+  line-height: $line-height-base;
+  color: #fff;
+  font-weight: normal;
+  font-style: italic;
+  font-family: Georgia, serif;
+  white-space: nowrap;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 6px solid;
+  }
+
+  @if $direction == 'left' {
+    &:after {
+      border-right-color: $color-base;
+ 
+      right: 100%;
+      top: 50%;
+      margin-top: -6px;
+    }
+  }
+
+  @if $direction == 'top' {
+    &:after {
+      border-bottom-color: $color-base;
+ 
+      left: 50%;
+      bottom: 100%;
+      margin-left: -6px;
+    }
+  }
+}
