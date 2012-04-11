@@ -1,4 +1,4 @@
-.section-one, .section-three {
+.section-one {
   @extend .with-columns;
 
   .desc-box {
@@ -13,7 +13,23 @@
 .section-two {
   @extend .with-columns;
 
-  .list, .img-box {
+  .desc-box {
+    @extend .two-from-three;
+  }
+
+  .list-box {
+    @extend .one-from-three;
+  }
+}
+
+.section-three {
+  @extend .with-columns;
+
+  .desc-box {
+    @extend .two-from-three;
+  }
+
+  .img-box {
     @extend .one-from-three;
   }
 }

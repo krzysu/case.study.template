@@ -1,7 +1,15 @@
 %section.section-two
   
-  .list
-    %h2 Technical
+  %h1 Technology
+
+  .desc-box
+    :markdown
+      Our current Hotel IBE (Internet Booking Engine) was build few years ago with redesign more than a two years ago. It was based on ASP.NET framework. In the new IBE we decided to use **Rails as our backend framework** together with a lot of **helpfull frontend tools** provided right out of the box: SASS (in fact I prefer SCSS syntax) with Compass, HAML and CoffeeScript with AssetPipeline. Next we decided to use jQuery (nothing special here), backbone.js (to keep client's code organized) together with Handlebars as our **client's side templating engine**. We also use Jasmine **to test** our front-end code.
+
+    %img{:src => 'http://placehold.it/590x200', :alt => 'img'}
+
+  .list-box.list
+    %h2 Front-end tools
     %ul
       %li AssetPipeline from Rails
       %li HAML
@@ -11,19 +19,7 @@
       %li backbone.js & underscore.js
       %li Handlebars.js
       %li GoogleMaps API
+      %li Jasmine
       %li
         a few self written
         %a{:href => 'https://github.com/krzysu/jquery.plugins'} jquery.plugins
-
-  .img-box
-    %img{:src => 'http://placehold.it/280x310', :alt => 'img'}
-
-  .list
-    %h2 To Do
-    %ul
-      %li Handy Menu
-      %li True Content
-      %li Real Images
-      %li A lot of work remain
-      %li Social icons
-      %li Contact form
