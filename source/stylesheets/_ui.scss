@@ -23,3 +23,46 @@ section {
     margin: 0.3em 0;
   }
 }
+
+.social-links {
+  li {
+    padding: 8px 0;
+    border-bottom: 1px solid $color-base;
+
+    &:first-child {
+      border-top: 1px solid $color-base;
+    }
+  }
+
+  a, span {
+    display: block;
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: auto 2em;
+    padding-left: 3em;
+
+    font-size: 1.2em;
+    line-height: 2em;
+    text-align: center;
+  }
+
+  .twitter {
+    background-image: image-url('twitter.svg');
+  }
+
+  .github {
+    background-image: image-url('github.svg');
+  }
+
+  .zerply {
+    background-image: image-url('zerply.svg');
+  }
+
+  .website {
+    background-image: image-url('vcard.svg');
+  }
+
+  .email {
+    background-image: image-url('google_talk.svg');
+  }
+}
