@@ -1,10 +1,37 @@
 %section.section-four
-  %h1 Section title
+  %h1 Phase 2. Prototyping
 
-  .img-box
-    %img{:src => 'http://placehold.it/900x300', :alt => 'img'}
+  %article
+    .desc-box
+      :markdown
+        It was time to **get our hands dirty** with some coding. The first page of the flow was Start Page, consisting of search form, as minimal as possible. I pushed on removing all **unnecessary fields** because our goal here was to take users on Hotels Page as quick as possible.
 
-  .desc-box
-    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        As we were in prototyping phase I did **minimal** styling and basic layout, just to show functions of the elements.
+    
+    .img-box
+      %figure
+        %img{:src => 'http://placehold.it/590x400', :alt => 'img'}
+        %figcaption image of old and new start mask
+
+  %article
+    .img-box
+      %img{:src => 'http://placehold.it/590x350', :alt => 'img'}
+      %img{:src => 'http://placehold.it/590x350', :alt => 'img'}
+
+    .desc-box
+      :markdown
+        The second page (Hotels Page) was **huge challenge** as we had a lot of features to present here. The main aim of users on this page was to find best hotel for them, that fulfills all their criteria. I think that the best solution (theoretical) would be to display only one hotel, the one that **user would be happy** with, but to achieve this we would need to know all user needs and preferences. Ok, back to the point, we started with displaying list of available hotels, then added some sorting and filtering posibilities. Each hotel has a lot of attributes by which it could be categorized like rating, special deals, facilities, location etc. And we also need to display all of them for the users to decide. The important part of this page was **map with the hotels** but I will get back to it later. From the technical point of view, page is mainly rendered on the client's side to make the **interaction** more smooth.
+
+  %article
+    .desc-box
+      :markdown
+        The third page (Hotel page) was fully redesigned. I came to **quite oposite idea** than in our current IBE and in most of competition. Instead of displaying a lot of hotel's detailed information in tabs, let's display them one after the other in one long page and let's add some **handy page menu** to navigate between the sections. I also redesigned the photo gallery.
+
+    .img-box
+      %img{:src => 'http://placehold.it/590x350', :alt => 'img'}
+        
+  %article
+    :markdown
+      Ok, so we had prototypes of our two main challenges, we **had approval** of our Product Owner and some **positive feedback** from people not involved in project (as our low budget UX testing group). Next we decided to add some design, as the following steps were only a checkout process (I know that checkout steps are **important** but we decided to build them after first 3 steps would be ready).
 
   

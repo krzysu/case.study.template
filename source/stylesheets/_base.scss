@@ -53,3 +53,20 @@ p {
 section img {
   max-width: 100%;
 }
+
+figure {
+  margin-bottom: 1em;
+
+  img {
+    margin: 0;
+    display: block;
+  }
+
+  figcaption {
+    text-align: center;
+    font-style: italic;
+    font-family: Georgia, serif;
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+}

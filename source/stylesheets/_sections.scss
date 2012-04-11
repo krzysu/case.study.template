@@ -11,7 +11,7 @@ header {
   }
 }
 
-.section-one {
+.section-one, .section-five, .section-six, .section-eight {
   @extend .with-columns;
 
   .desc-box {
@@ -48,7 +48,25 @@ header {
 }
 
 .section-four {
+  article {
+    @extend .with-columns;
+  }
 
+  .desc-box {
+    @extend .one-from-three;
+  }
+
+  .img-box {
+    @extend .two-from-three;
+  }
+
+  .desc-box-alt {
+    @extend .two-from-three;
+  }
+
+  .img-box-alt {
+    @extend .one-from-three;
+  }
 }
 
 footer section {
