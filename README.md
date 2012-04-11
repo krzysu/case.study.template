@@ -2,7 +2,7 @@
 
 description: __case study page template build in haml/sass/coffee thanks to middleman app__  
 version: 0.1   
-demo: will be  
+demo: [click here](http://krzysu.github.com/case.study.template/)
 
 
 ## How to use?
