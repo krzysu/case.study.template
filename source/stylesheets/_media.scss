@@ -1,0 +1,46 @@
+@media only screen and (max-width: 768px) {
+
+  .one-from-three {
+    float: none;
+    width: auto;
+    margin-right: 0;
+  }
+
+  .two-from-three {
+    float: none;
+    width: auto;
+    margin-right: 0;
+  }
+
+  .about-box {
+    margin-bottom: 50px;
+  }
+
+  h1 { font-size: 1.7em; margin-bottom: 10px; }
+  h2 { font-size: 1.2em; }
+  header h1 { font-size: 3em; line-height: 1.5em; }
+  
+  header #go-to-author {
+    top: 3em;
+    left: -9px;
+    @include dark-tooltip('top');
+  }
+}
+
+@media only screen and (max-width : 480px) {
+
+  h1 { font-size: 1.3em; margin-bottom: 5px; }
+  h2 { font-size: 1.1em; }
+  header h1 { font-size: 2em; line-height: 1.2em; margin-bottom: 10px; }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  header #go-to-author {
+    @include dark-tooltip();
+  }
+
+}
+
+
