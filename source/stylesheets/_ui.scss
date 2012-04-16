@@ -63,14 +63,19 @@ section {
 
   .zerply {
     background-image: image-url('zerply.svg');
+    background-size: auto 1.7em;
+    background-position: 0.2em center;
   }
 
   .website {
-    background-image: image-url('vcard.svg');
+    background-image: image-url('info.svg');
+    background-size: auto 1.7em;
+    background-position: 0.3em center;
   }
 
   .email {
-    background-image: image-url('google_talk.svg');
+    background-image: image-url('mail.svg');
+    background-position: 0.2em center;
   }
 }
 
