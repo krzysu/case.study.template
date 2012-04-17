@@ -20,3 +20,8 @@
   @include column-base;
   width: 65.5%;
 }
+
+.one-from-two {
+  @include column-base;
+  width: 48.25%;
+}

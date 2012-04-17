@@ -16,6 +16,7 @@ section {
     width: 100%;
     display: block;
     margin-bottom: 1em;
+    @include frame;
   }
 }
 
@@ -54,70 +55,32 @@ section {
   }
 
   .twitter {
-    background-image: image-url('twitter.svg');
+    background-image: image-url('icons/twitter.svg');
   }
 
   .github {
-    background-image: image-url('github.svg');
+    background-image: image-url('icons/github.svg');
   }
 
   .zerply {
-    background-image: image-url('zerply.svg');
+    background-image: image-url('icons/zerply.svg');
     background-size: auto 1.7em;
     background-position: 0.2em center;
   }
 
   .website {
-    background-image: image-url('info.svg');
+    background-image: image-url('icons/info.svg');
     background-size: auto 1.7em;
     background-position: 0.3em center;
   }
 
   .email {
-    background-image: image-url('mail.svg');
+    background-image: image-url('icons/mail.svg');
     background-position: 0.2em center;
   }
-}
 
-@mixin dark-tooltip($direction: 'left') {
-  background: $color-base;
-  @include border-radius(4px);
-  padding: 4px 8px;
-  
-  text-align: center;
-  font-size: 14px;
-  line-height: $line-height-base;
-  color: #fff;
-  font-weight: normal;
-  font-style: italic;
-  font-family: Georgia, serif;
-  white-space: nowrap;
-
-  &:after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 6px solid;
-  }
-
-  @if $direction == 'left' {
-    &:after {
-      border-right-color: $color-base;
- 
-      right: 100%;
-      top: 50%;
-      margin-top: -6px;
-    }
-  }
-
-  @if $direction == 'top' {
-    &:after {
-      border-bottom-color: $color-base;
- 
-      left: 50%;
-      bottom: 100%;
-      margin-left: -6px;
-    }
+  .soundcloud {
+    background-image: image-url('icons/soundcloud.svg');
+    background-size: auto 2.2em;
   }
 }
