@@ -11,7 +11,7 @@ header {
   }
 }
 
-.section-one {
+.section-one, .section-six {
   @extend .with-columns;
 
   .desc-box {
@@ -23,7 +23,7 @@ header {
   }
 }
 
-.section-one, .section-five, .section-six, .section-eight {
+.section-one, .section-five, .section-eight {
   @extend .with-columns;
 
   .desc-box {

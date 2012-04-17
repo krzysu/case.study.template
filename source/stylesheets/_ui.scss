@@ -16,6 +16,9 @@ section {
     width: 100%;
     display: block;
     margin-bottom: 1em;
+  }
+
+  img {
     @include frame;
   }
 }
@@ -69,9 +72,9 @@ section {
   }
 
   .website {
-    background-image: image-url('icons/info.svg');
-    background-size: auto 1.7em;
-    background-position: 0.3em center;
+    background-image: image-url('icons/home.svg');
+    background-size: auto 1.8em;
+    background-position: 0.2em center;
   }
 
   .email {
