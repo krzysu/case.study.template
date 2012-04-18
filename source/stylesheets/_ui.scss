@@ -8,6 +8,20 @@ section {
       margin-bottom: 0;
     }
   }
+
+  header {
+    margin-bottom: 20px;
+
+    h1, .pager {
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle;
+    }
+
+    .pager {
+      margin-left: 30px;
+    }
+  }
 }
 
 .img-box {
@@ -103,4 +117,8 @@ section {
       color: $color-base;
     }
   }
+}
+
+.button {
+  @include dark-tooltip;
 }

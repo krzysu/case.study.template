@@ -3,13 +3,13 @@ $ ->
 
 class CaseStudyController
   constructor: ->
-    @autoScroller =  new CaseStudy.AutoScroller()
     @initInternalLinks()
 
-    @slider = new CaseStudy.ContentSlider('#highlights-slider-control', '#highlights-slider-body')
+    @sliderHighlights = new CaseStudy.ContentSlider('#highlights-slider-control', '#highlights-slider-body')
+    @sliderPrototyping = new CaseStudy.ContentSlider('#prototyping-slider-control', '#prototyping-slider-body')
 
   initInternalLinks: ->
     $('a.internal').on 'click', (e) =>
       e.preventDefault()
       destinationId = $(e.target).attr('href')
-      @autoScroller.scrollTo(destinationId)
+      CaseStudy.AutoScroller.scrollTo(destinationId)

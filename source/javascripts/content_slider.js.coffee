@@ -5,6 +5,7 @@ class CaseStudy.ContentSlider
     @initControl()
 
   setDefaultSlide: ->
+    @hideAll()
     @$controls.each (index, item) =>
       $item = $(item)
       if $item.hasClass('active')
@@ -12,12 +13,27 @@ class CaseStudy.ContentSlider
         $(id).show()
 
   initControl: ->
-    @$controls.on 'click', (e) =>
-      e.preventDefault()
-      @$controls.removeClass('active')
-      id = $(e.target).addClass('active').attr('href')
-      @showSlide(id)
+    @$controls.on 'click', @onClickHandler
+    $(@bodyBox).find('a').on 'click', @onClickHandler
+
+  onClickHandler: (e) =>
+    e.preventDefault()
+    id = $(e.target).attr('href')
+
+    @setActiveControl(id)
+    @showSlide(id)
+    CaseStudy.AutoScroller.scrollTo(@controlBox)
+
+  setActiveControl: (id) ->
+    @$controls.removeClass('active')
+    @$controls.each (index, item) -> 
+      $item = $(item)
+      if $item.attr('href') == id
+        $item.addClass('active')
 
   showSlide: (id) ->
-    $(@bodyBox).find('article').hide()
+    @hideAll()
     $(id).fadeIn()
+
+  hideAll: ->
+    $(@bodyBox).find('article').hide()

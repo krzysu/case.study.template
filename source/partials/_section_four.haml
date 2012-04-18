@@ -1,40 +1,62 @@
 %section.section-four
-  %h1 Phase 2. Prototyping
+  %header
+    %h1 Phase 2. Prototyping
+    .pager#prototyping-slider-control
+      %li
+        %a.active{:href => '#prototyping-1'} 1
+      %li 
+        %a{:href => '#prototyping-2'} 2
+      %li
+        %a{:href => '#prototyping-3'} 3
+      %li
+        %a{:href => '#prototyping-4'} 4
 
-  %article
-    .desc-box
-      :markdown
-        It was time to **get our hands dirty** with some coding. The first page of the flow was Start Page, consisting of search form, as minimal as possible. I pushed on removing all **unnecessary fields** because our goal here was to take users on Hotels Page as quick as possible.
+  #prototyping-slider-body
 
-        As we were in prototyping phase I did **minimal** styling and basic layout, just to show functions of the elements.
-    
-    .img-box
-      %figure
-        %img{:src => image_path('04-1.jpg'), :alt => 'img'}
-        %figcaption image of old and new start mask
+    %article#prototyping-1
+      .desc-box
+        :markdown
+          It was time to **get our hands dirty** with some coding. The first page of the flow was Start Page, consisting of search form, as minimal as possible. I pushed on removing all **unnecessary fields** because our goal here was to take users on Hotels Page as quick as possible.
 
-  %article
-    .img-box
-      %figure
-        %img{:src => image_path('04-2.jpg'), :alt => 'img'}
-        %figcaption prototype of Hotels Page
+          As we were in prototyping phase I did **minimal** styling and basic layout, just to show functions of the elements.
 
-    .desc-box
-      :markdown
-        The second page (Hotels Page) was **huge challenge** as we had a lot of features to present here. The main aim of users on this page was to find best hotel for them, that fulfills all their criteria. I think that the best solution (theoretical) would be to display only one hotel, the one that **user would be happy** with, but to achieve this we would need to know all user needs and preferences. Ok, back to the point, we started with displaying list of available hotels, then added some sorting and filtering posibilities. Each hotel has a lot of attributes by which it could be categorized like rating, special deals, facilities, location etc. And we also need to display all of them for the users to decide. The important part of this page was **map with the hotels** but I will get back to it later. From the technical point of view, page is mainly rendered on the client's side to make the **interaction** more smooth.
+        %a.button{:href => '#prototyping-2'} next &raquo;
+      
+      .img-box
+        %figure
+          %img{:src => image_path('04-1.jpg'), :alt => 'img'}
+          %figcaption image of old and new start mask
 
-  %article
-    .desc-box
-      :markdown
-        The third page (Hotel page) was fully redesigned. I came to **quite oposite idea** than in our current IBE and in most of competition. Instead of displaying a lot of hotel's detailed information in tabs, let's display them one after the other in one long page and let's add some **handy page menu** to navigate between the sections. I also redesigned the photo gallery.
+    %article#prototyping-2
+      .desc-box
+        :markdown
+          The second page (Hotels Page) was **huge challenge** as we had a lot of features to present here. The main aim of users on this page was to find best hotel for them, that fulfills all their criteria. We started with displaying list of available hotels, then added some sorting and filtering posibilities. Each hotel has a lot of attributes by which it could be categorized like rating, special deals, facilities, location etc. And we also need to display all of them for the users to decide. The important part of this page was **map with the hotels** but I will get back to it later. From the technical point of view, page is mainly rendered on the client's side to make the **interaction** more smooth.
 
-    .img-box
-      %figure
-        %img{:src => image_path('04-3.jpg'), :alt => 'img'}
-        %figcaption prototype of single Hotel Page
-        
-  %article
-    :markdown
-      Ok, so we had prototypes of our two main challenges, we **had approval** of our Product Owner and some **positive feedback** from people not involved in project (as our low budget UX testing group). Next we decided to add some design, as the following steps were only a checkout process (I know that checkout steps are **important** but we decided to build them after first 3 steps would be ready).
+        %a.button{:href => '#prototyping-3'} next &raquo;
 
-  
+      .img-box
+        %figure
+          %img{:src => image_path('04-2.jpg'), :alt => 'img'}
+          %figcaption prototype of Hotels Page with map
+
+    %article#prototyping-3
+      .desc-box
+        :markdown
+          The third page (Hotel page) was fully redesigned. I came to **quite oposite idea** than in our current IBE and in most of competition. Instead of displaying a lot of hotel's detailed information in tabs, let's display them one after the other in one long page and let's add some **handy page menu** to navigate between the sections. I also redesigned the photo gallery.
+
+        %a.button{:href => '#prototyping-4'} next &raquo;
+
+      .img-box
+        %figure
+          %img{:src => image_path('04-3.jpg'), :alt => 'img'}
+          %figcaption prototype of single Hotel Page
+          
+    %article#prototyping-4
+      .desc-box
+        :markdown
+          Ok, so we had prototypes of our two main challenges, we **had approval** of our Product Owner and some **positive feedback** from people not involved in project (as our low budget UX testing group). Next we decided to add some design, as the following steps were only a checkout process (I know that checkout steps are **important** but we decided to build them after first 3 steps would be ready).
+
+      .img-box
+        %figure
+          %img{:src => image_path('04-4.jpg'), :alt => 'img'}
+          %figcaption prototype of Hotels Page

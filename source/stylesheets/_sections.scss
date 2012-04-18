@@ -82,20 +82,6 @@
 }
 
 .section-seven {
-  header {
-    margin-bottom: 20px;
-
-    h1, .pager {
-      display: inline-block;
-      margin: 0;
-      vertical-align: middle;
-    }
-
-    .pager {
-      margin-left: 30px;
-    }
-  }
-
   article {
     @extend .with-columns;
   }
@@ -106,12 +92,6 @@
 
   .img-box {
     @extend .two-from-three;
-  }
-}
-
-#highlights-slider-body {
-  article {
-    display: none;
   }
 }
 
