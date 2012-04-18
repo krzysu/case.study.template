@@ -5,21 +5,15 @@
 }
 
 .img-two-01 {
-  background: image-url('04.png') center center no-repeat;
+  background: image-url('02.png') center center no-repeat;
   height: 230px;
   @include frame;
   margin-top: 30px;
 }
 
-.img-five-01 {
-  background: image-url('03.png') left center no-repeat;
-  background-size: auto 100%;
-  height: 420px;
-  @include frame;
-}
 
 .img-eight-01 {
-  background: image-url('06.png') left center no-repeat;
+  background: image-url('08.png') left center no-repeat;
   background-size: auto 100%;
   height: 250px;
   @include frame;
