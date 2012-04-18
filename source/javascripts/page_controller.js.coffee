@@ -6,6 +6,8 @@ class CaseStudyController
     @autoScroller =  new CaseStudy.AutoScroller()
     @initInternalLinks()
 
+    @slider = new CaseStudy.ContentSlider('#highlights-slider-control', '#highlights-slider-body')
+
   initInternalLinks: ->
     $('a.internal').on 'click', (e) =>
       e.preventDefault()

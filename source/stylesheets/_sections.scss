@@ -1,4 +1,4 @@
-header {
+#header-section {
   h3 span {
     position: relative;
   }
@@ -78,6 +78,40 @@ header {
 
   .img-box-alt {
     @extend .one-from-three;
+  }
+}
+
+.section-seven {
+  header {
+    margin-bottom: 20px;
+
+    h1, .pager {
+      display: inline-block;
+      margin: 0;
+      vertical-align: middle;
+    }
+
+    .pager {
+      margin-left: 30px;
+    }
+  }
+
+  article {
+    @extend .with-columns;
+  }
+
+  .desc-box {
+    @extend .one-from-three;
+  }
+
+  .img-box {
+    @extend .two-from-three;
+  }
+}
+
+#highlights-slider-body {
+  article {
+    display: none;
   }
 }
 

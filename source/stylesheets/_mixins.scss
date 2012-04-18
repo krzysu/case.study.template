@@ -1,5 +1,4 @@
-@mixin frame {  
-  text-indent: -9999px;
+@mixin frame {
   display: block;
   border: 5px solid #fff;
   @include box-shadow(0 1px 5px 1px $color-base); 
@@ -7,7 +6,7 @@
   -moz-box-sizing: border-box;
 }
 
-@mixin dark-tooltip($direction: 'left') {
+@mixin dark-tooltip($direction: 'none') {
   background: $color-base;
   @include border-radius(4px);
   padding: 4px 8px;
@@ -46,6 +45,12 @@
       left: 50%;
       bottom: 100%;
       margin-left: -6px;
+    }
+  }
+
+  @if $direction == 'none' {
+    &:after {
+      display: none;
     }
   }
 }

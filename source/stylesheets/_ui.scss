@@ -87,3 +87,20 @@ section {
     background-size: auto 2.2em;
   }
 }
+
+.pager {
+  li {
+    display: inline-block;
+  }
+
+  a {
+    @include dark-tooltip;
+    border: 1px solid $color-base;
+    padding: 2px 7px 4px;
+
+    &.active {
+      background-color: #fff;
+      color: $color-base;
+    }
+  }
+}
