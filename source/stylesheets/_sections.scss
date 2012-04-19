@@ -85,6 +85,10 @@
   .img-box {
     @extend .two-from-three;
   }
+
+  .desc-box-alt {
+    @extend .one-from-two;
+  }
 }
 
 footer section {
@@ -111,6 +115,7 @@ footer section {
 
   em {
     font-weight: bold;
+    font-style: normal;
   }
 
   #go-to-top {

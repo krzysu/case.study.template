@@ -24,30 +24,92 @@
   #highlights-slider-body
 
     %article#highlight-1
-      loader + full width map displayed by default
+      .desc-box-alt
+        :markdown
+          **Map displayed by default**  
+
+          Hotels page is the one when users need to wait a bit for available hotels fullfilling their search query. We wanted to make the loading time **less annoying** and we used map to that. We are loading map for queried location under the spinner, making the feel that **something is happening** and there is some progress. In addition we show tips, trying to teach users, not just waste their time.  
+
+          We also wanted push users to use map as this is **perfect way** to find their hotels. So we decided to show the map with hotels by default. We added search by location feature to easily take user to prefered city region, which also works as filter. Each step user takes on Hotels page leads her to **best fitted offer**.
+          
+        %a.button{:href => '#highlight-2'} next &raquo;
 
     %article#highlight-2
-      shortlist
+      .desc-box
+        :markdown
+          **Shortlist**  
+
+          When browsing through list of hotels users often find some **good looking offers**. Now they can add them to *shortlist* and compare them later. This feature works as filter and **helps users** to concentrate on selected offers.
+
+        %a.button{:href => '#highlight-3'} next &raquo;
 
     %article#highlight-3
-      single hotel box on the list (the story)
+      .desc-box
+        :markdown
+          **Single hotel box**  
+
+          This is the story of how we iterated with single hotel box design and what we achieved at the end.
+
+        %a.button{:href => '#highlight-4'} next &raquo;
 
     %article#highlight-4
-      page menu on Hotel page
+      .desc-box
+        :markdown
+          **Page menu on Hotel page**  
+
+          As I mentioned before Hotel page was completely redesigned. I decided to build one, long template in a bit magazine layout. Each section is nicely composed with others. I added page menu to easily scroll between sections and highlight current window position. I wrote [jquery.on-page-navigator](https://github.com/krzysu/jquery.plugins) for this purpose.
+
+        %a.button{:href => '#highlight-5'} next &raquo;
 
     %article#highlight-5
-      gallery new and old
+      .desc-box
+        :markdown
+          **New photo gallery**  
+
+          I redesigned the photo gallery to **be more usable**. Users mostly want to get overview of the hotel as quick as possible and if it doesn't fit their criteria switch to another one. The old gallery forces users to click on each photo. With new gallery user can have overview of the hotel just **hovering over the thumbnails**. 
+
+        %a.button{:href => '#highlight-6'} next &raquo;
 
     %article#highlight-6
-      similar hotels
+      .desc-box
+        :markdown
+          **Similar hotels section**  
+
+          This is taken from e-commerce and fits here as well as booking hotel is similar to online shopping. I introduced similar hotels section at the end of Hotel page to guide user to other interesting offers for her if she found something unsuitable in the browsed one. 
+
+        %a.button{:href => '#highlight-7'} next &raquo;
 
     %article#highlight-7
-      user friendly forms
+      .desc-box
+        :markdown
+          **User friendly forms**  
+
+
+        %a.button{:href => '#highlight-8'} next &raquo;
 
     %article#highlight-8
-      IE 6 info
+      .desc-box
+        :markdown
+          **IE6 not supported but still user friendly**  
+
+          We decided **not to waste time** for IE6 support as it was only **0.67%** of our users in previous three months. So I just did screen with proper information.  
+
+          All other popular browsers are supported including IE7+, Firefox 3+, Chrome, Safari and Opera. It also **works great on tablets**.
+          
+        %a.button{:href => '#highlight-9'} next &raquo;
+      
+      .img-box
+        %figure
+          .img-seven-08
+          %figcaption this is what IE6 user sees when visiting Hotel application 
 
     %article#highlight-9
-      fluid layout between 720 and 1100px
+      .desc-box-alt
+        :markdown
+          **Fluid layout between 720 and 1100px**
+
+          Responsive design wasn't our goal, as we targeted only desktop users, but our application is used by different clients and needs to be adjusted to look and feel of client's portals. Some of them even put our IBE in iframe. I had some issues with that in the past so now I decided to make the layout fluid to better fit different widths of our client's sites. 
+
+        
 
   

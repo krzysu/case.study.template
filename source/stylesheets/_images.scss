@@ -11,6 +11,11 @@
   margin-top: 30px;
 }
 
+.img-seven-08 {
+  background: image-url('07-8.jpg') left center no-repeat;
+  height: 300px;
+  @include frame;
+}
 
 .img-eight-01 {
   background: image-url('08.png') left center no-repeat;
