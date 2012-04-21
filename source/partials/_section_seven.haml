@@ -24,13 +24,25 @@
   #highlights-slider-body
 
     %article#highlight-1
-      .desc-box-alt
+      
+      .img-box
+        %figure
+          %img{:src => image_path('07-10.jpg'), :alt => 'img'}
+          %figcaption
+            Hotels Page waits for response from Hotel API
+
+        %figure
+          %img{:src => image_path('07-11.jpg'), :alt => 'img'}
+          %figcaption
+            Map with hotels and hotel details on Hotels Page
+
+      .desc-box
         :markdown
           **Map displayed by default**  
 
-          Hotels page is the one when users need to wait a bit for available hotels fullfilling their search query. We wanted to make the loading time **less annoying** and we used map to that. We are loading map for queried location under the spinner, making the feel that **something is happening** and there is some progress. In addition we show tips, trying to teach users, not just waste their time.  
+          Hotels Page is the one when users need to wait a bit for available hotels fullfilling their search query. We wanted to make the loading time **less annoying** and we used map to that. We are loading map for queried location under the spinner, making the feel that **something is happening** and there is some progress. In addition we show tips, trying to teach users, not just waste their time.  
 
-          We also wanted push users to use map as this is **perfect way** to find their hotels. So we decided to show the map with hotels by default. We added search by location feature to easily take user to prefered city region, which also works as filter. Each step user takes on Hotels page leads her to **best fitted offer**.
+          We also wanted push users to use map as this is **perfect way** to find their hotels. So we decided to show the map with hotels by default. We added search by location feature to easily take user to prefered city region, which also works as filter. Each step user takes on Hotels Page leads her to **best fitted offer**.
           
         %a.button{:href => '#highlight-2'} next &raquo;
 
