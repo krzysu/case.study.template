@@ -24,7 +24,6 @@
   #highlights-slider-body
 
     %article#highlight-1
-      
       .img-box
         %figure
           %img{:src => image_path('07-10.jpg'), :alt => 'img'}
@@ -47,7 +46,6 @@
         %a.button{:href => '#highlight-2'} next &raquo;
 
     %article#highlight-2
-      
       .img-box
         %figure
           %img{:src => image_path('07-20.jpg'), :alt => 'img'}
@@ -63,16 +61,35 @@
         %a.button{:href => '#highlight-3'} next &raquo;
 
     %article#highlight-3
+      .img-box
+        %figure
+          %img{:src => image_path('07-30.jpg'), :alt => 'img'}
+          %figcaption
+            Step 1. Initial concept from graphic designer
+        %figure
+          %img{:src => image_path('07-31.jpg'), :alt => 'img'}
+          %figcaption
+            Step 2a. After explaining how it should work :)
+        %figure
+          %img{:src => image_path('07-32.jpg'), :alt => 'img'}
+          %figcaption
+            Step 2b. Concept of box with longer description
+        %figure
+          %img{:src => image_path('07-33.jpg'), :alt => 'img'}
+          %figcaption
+            Step 3. Box with all posible features enabled! Finall design.
+
+        %a.button{:href => '#highlight-4'} next &raquo;
+
       .desc-box
         :markdown
-          **Single hotel box**  
+          **Single hotel item on the list**  
 
-          This is the story of how we iterated with single hotel box design and what we achieved at the end.
+          This is simplified story of how we **iterated** with single hotel box design and what we achieved at the end.
 
         %a.button{:href => '#highlight-4'} next &raquo;
 
     %article#highlight-4
-      
       .img-box
         %figure
           %img{:src => image_path('07-40.jpg'), :alt => 'img'}
@@ -88,7 +105,6 @@
         %a.button{:href => '#highlight-5'} next &raquo;
 
     %article#highlight-5
-      
       .img-box
         %figure
           %img{:src => image_path('07-50.jpg'), :alt => 'img'}
@@ -119,6 +135,12 @@
         %a.button{:href => '#highlight-7'} next &raquo;
 
     %article#highlight-7
+      .img-box
+        %figure
+          %img{:src => image_path('07-70.jpg'), :alt => 'img'}
+          %figcaption
+            
+
       .desc-box
         :markdown
           **User friendly forms**  
@@ -127,6 +149,11 @@
         %a.button{:href => '#highlight-8'} next &raquo;
 
     %article#highlight-8
+      .img-box
+        %figure
+          .img-seven-08
+          %figcaption this is what IE6 user sees when visiting Hotel application 
+
       .desc-box
         :markdown
           **IE6 not supported but still user friendly**  
@@ -137,11 +164,6 @@
           
         %a.button{:href => '#highlight-9'} next &raquo;
       
-      .img-box
-        %figure
-          .img-seven-08
-          %figcaption this is what IE6 user sees when visiting Hotel application 
-
     %article#highlight-9
       .img-box
         %figure
