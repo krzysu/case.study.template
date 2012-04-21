@@ -20,9 +20,7 @@ class CaseStudy.ContentSlider
     e.preventDefault()
     id = $(e.target).attr('href')
 
-    @setActiveControl(id)
-    @showSlide(id)
-    CaseStudy.AutoScroller.scrollTo(@controlBox)
+    CaseStudy.AutoScroller.scrollTo @controlBox, => @showSlide(id)
 
   setActiveControl: (id) ->
     @$controls.removeClass('active')
@@ -32,6 +30,7 @@ class CaseStudy.ContentSlider
         $item.addClass('active')
 
   showSlide: (id) ->
+    @setActiveControl(id)
     @hideAll()
     $(id).fadeIn()
 
