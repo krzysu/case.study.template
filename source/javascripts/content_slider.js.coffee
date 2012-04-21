@@ -14,7 +14,7 @@ class CaseStudy.ContentSlider
 
   initControl: ->
     @$controls.on 'click', @onClickHandler
-    $(@bodyBox).find('a').on 'click', @onClickHandler
+    $(@bodyBox).find('.button').on 'click', @onClickHandler
 
   onClickHandler: (e) =>
     e.preventDefault()
