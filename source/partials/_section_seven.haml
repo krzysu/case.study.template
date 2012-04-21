@@ -47,6 +47,13 @@
         %a.button{:href => '#highlight-2'} next &raquo;
 
     %article#highlight-2
+      
+      .img-box
+        %figure
+          %img{:src => image_path('07-20.jpg'), :alt => 'img'}
+          %figcaption
+            Hotels Page waits for response from Hotel API
+
       .desc-box
         :markdown
           **Shortlist**  
@@ -65,15 +72,29 @@
         %a.button{:href => '#highlight-4'} next &raquo;
 
     %article#highlight-4
+      
+      .img-box
+        %figure
+          %img{:src => image_path('07-40.jpg'), :alt => 'img'}
+          %figcaption
+            When you scroll down Hotel Page the navigation is always with you
+
       .desc-box
         :markdown
-          **Page menu on Hotel page**  
+          **Page navigation on Hotel Page**  
 
-          As I mentioned before Hotel page was completely redesigned. I decided to build one, long template in a bit magazine layout. Each section is nicely composed with others. I added page menu to easily scroll between sections and highlight current window position. I wrote [jquery.on-page-navigator](https://github.com/krzysu/jquery.plugins) for this purpose.
+          As I mentioned before Hotel Page was **completely redesigned**. I decided to build one, long template in a bit **magazine layout**. Each section is nicely composed with others. I added page navigation to easily scroll between sections and **highlight** current window position. I wrote [jquery.on-page-navigator](https://github.com/krzysu/jquery.plugins) for this purpose.
 
         %a.button{:href => '#highlight-5'} next &raquo;
 
     %article#highlight-5
+      
+      .img-box
+        %figure
+          %img{:src => image_path('07-50.jpg'), :alt => 'img'}
+          %figcaption
+            New photo gallery on Hotel Page in action
+
       .desc-box
         :markdown
           **New photo gallery**  
@@ -83,11 +104,17 @@
         %a.button{:href => '#highlight-6'} next &raquo;
 
     %article#highlight-6
+      .img-box
+        %figure
+          %img{:src => image_path('07-60.jpg'), :alt => 'img'}
+          %figcaption
+            At the bottom of Hotel Page user can find Similar Hotels section, on the screen you can see that backend hadn't supported this feature when the screenshot was taken :)
+
       .desc-box
         :markdown
           **Similar hotels section**  
 
-          This is taken from e-commerce and fits here as well as booking hotel is similar to online shopping. I introduced *similar hotels* section at the end of Hotel page to guide user to other interesting offers for her if she found something unsuitable in the browsed one. 
+          This is taken from e-commerce and fits here as well as booking hotel is **similar to online shopping**. I introduced *similar hotels* section at the end of Hotel Page to **guide user** to other interesting offers for her if she found something unsuitable in the browsed one. 
 
         %a.button{:href => '#highlight-7'} next &raquo;
 
@@ -116,11 +143,17 @@
           %figcaption this is what IE6 user sees when visiting Hotel application 
 
     %article#highlight-9
-      .desc-box-alt
+      .img-box
+        %figure
+          %img{:src => image_path('07-90.jpg'), :alt => 'img'}
+          %figcaption
+            Application is also usable on narrower screens
+
+      .desc-box
         :markdown
           **Fluid layout between 720 and 1100px**
 
-          Responsive design wasn't our goal, as we targeted only desktop users, but our application is used by different clients and needs to be adjusted to look and feel of client's portals. Some of them even put our IBE in iframe. I had some issues with that in the past so now I decided to make the layout fluid to better fit different widths of our client's sites. 
+          Responsive design wasn't our goal, as we targeted **only desktop users**, but our application is used by different clients and needs to be adjusted to look and feel of client's portals. Some of them even put our IBE in iframe. I had some issues with that in the past so now I decided to make the layout fluid to **better fit different widths** of our client's sites. 
 
         
 
