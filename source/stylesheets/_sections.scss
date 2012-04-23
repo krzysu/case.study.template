@@ -2,13 +2,13 @@
   h3 span {
     position: relative;
   }
+}
 
-  #go-to-author {
-    // @include dark-tooltip;
-    position: absolute;
-    left: 120%;
-    top: -4px;
-  }
+#go-to-author {
+  // @include dark-tooltip;
+  position: absolute;
+  left: 120%;
+  top: -4px;
 }
 
 .section-one, .section-six {

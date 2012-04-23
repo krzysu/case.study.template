@@ -1,14 +1,6 @@
 section {
   margin-bottom: 160px;
 
-  article {
-    margin-bottom: 80px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
   header {
     margin-bottom: 20px;
 
@@ -121,4 +113,9 @@ section {
 
 .button {
   @include dark-tooltip;
+}
+
+.separator {
+  margin: 200px 0;
+  font-size: 2em;
 }
