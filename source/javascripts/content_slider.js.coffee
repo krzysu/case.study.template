@@ -32,7 +32,7 @@ class CaseStudy.ContentSlider
   showSlide: (id) ->
     @setActiveControl(id)
     @hideAll()
-    $(id).fadeIn()
+    $(id).show()
 
   hideAll: ->
     $(@bodyBox).find('article').hide()
