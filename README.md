@@ -9,9 +9,10 @@ for demo [click here](http://krzysu.github.com/case.study.template/)
 -   simple semantic grid
 -   styles for basic elements like lists and images with captions
 -   nice typography thanks to Google Fonts API
+-   you can use Markdown in your articles
 -   content slider if you want to display more articles in one section
 -   mobile friendly thanks to responsive design
--   author section on the bottom with set of social options (some [vector icons](http://www.alexpeattie.com/projects/justvector_icons/) by Alex Peattie)
+-   author's section on the bottom with set of social options (some [vector icons](http://www.alexpeattie.com/projects/justvector_icons/) by Alex Peattie)
 -   completely open source, available under the MIT licence!
 
 ## How to use?

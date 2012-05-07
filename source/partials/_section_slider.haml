@@ -1,6 +1,6 @@
-%section.section-four
+%section.section-with-slider
   %header
-    %h1 Section With Many Articles
+    %h1 Section with Content Slider
     %ul.pager#prototyping-slider-control
       %li
         %a.active{:href => '#prototyping-1'} 1
@@ -13,9 +13,12 @@
 
   #prototyping-slider-body
 
-    %article#prototyping-1
+    %article.article-with-big-img#prototyping-1
       .desc-box
-        %p= lorem.paragraph
+        :markdown
+          **Check page_controller.js.coffee file to see how to use this**
+        
+          #{lorem.paragraph}
 
         %a.button{:href => '#prototyping-2'} next &raquo;
       
@@ -24,34 +27,45 @@
           %img{:src => lorem.image('590x300'), :alt => 'img'}
           %figcaption image caption
 
-    %article#prototyping-2
+    %article.article-with-big-img#prototyping-2
       .img-box
         %figure
           %img{:src => lorem.image('590x300'), :alt => 'img'}
           %figcaption image caption
 
       .desc-box
-        %p= lorem.paragraph
+        :markdown
+          **Each article can have its own layout**
+        
+          #{lorem.paragraph}
 
         %a.button{:href => '#prototyping-3'} next &raquo;
 
-    %article#prototyping-3
+    %article.article-without-grid#prototyping-3
       .desc-box
-        %p= lorem.paragraph
+        :markdown
+          **If you do not specify a grid for an article then it will be full screen**
+        
+          #{lorem.paragraph}
 
         %a.button{:href => '#prototyping-4'} next &raquo;
       
       .img-box
         %figure
-          %img{:src => lorem.image('590x300'), :alt => 'img'}
+          %img{:src => lorem.image('900x200'), :alt => 'img'}
           %figcaption image caption
           
-    %article#prototyping-4
+    %article.article-with-small-img#prototyping-4
+      .desc-box
+        :markdown
+          **That's all, contact me if you have any problems**
+        
+          #{lorem.paragraph}
+
+          #{lorem.paragraph}
+
       .img-box
         %figure
-          %img{:src => lorem.image('590x300'), :alt => 'img'}
+          %img{:src => lorem.image('300x350'), :alt => 'img'}
           %figcaption image caption
-
-      .desc-box
-        %p= lorem.paragraph
 

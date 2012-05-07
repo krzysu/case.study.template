@@ -18,10 +18,56 @@
     display: inline-block;
     margin-bottom: 20px;
   }
+
+  h3 span {
+    position: relative;
+  }
+}
+
+#go-to-author {
+  // @include dark-tooltip; // tooltip style is set in _media.scss
+  position: absolute;
+  left: 120%;
+  top: -4px;
 }
 
 footer {
   margin-bottom: 200px;
+}
+
+footer section {
+  @extend .with-columns;
+  position: relative;
+
+  .about-box {
+    @extend .two-from-three;
+  }
+
+  .social-box {
+    @extend .one-from-three;
+  }
+
+  img {
+    float: left;
+    @include frame;
+    margin: 0 1em 1em 0;
+  }
+
+  strong {
+    font-size: 1.2em;
+  }
+
+  em {
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  #go-to-top {
+    @include dark-tooltip('top');
+    position: absolute;
+    right: 0;
+    bottom: -180px;
+  }
 }
 
 small {

@@ -1,97 +1,76 @@
-#header-section {
-  h3 span {
-    position: relative;
+.section-with-grid {
+  article {
+    @extend .with-columns;
+    margin-bottom: 80px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .article-with-equal-cols { // grid 1/2 + 1/2 
+    .desc-box {
+      @extend .one-from-two;
+    }
+
+    .img-box {
+      @extend .one-from-two;
+    }
+  }
+
+  .article-with-list { // grid 2/3 + 1/3 
+    .desc-box {
+      @extend .two-from-three;
+    }
+
+    .list-box {
+      @extend .one-from-three;
+    }
+  }
+
+  .article-with-not-equal-cols { // grid 1/3 + 2/3 
+    .desc-box {
+      @extend .two-from-three;
+    }
+
+    .img-box {
+      @extend .one-from-three;
+    }
   }
 }
 
-#go-to-author {
-  // @include dark-tooltip; // tooltip style is set in _media.scss
-  position: absolute;
-  left: 120%;
-  top: -4px;
-}
 
-.section-one {
-  @extend .with-columns;
-
-  .desc-box {
-    @extend .one-from-two;
-  }
-
-  .img-box {
-    @extend .one-from-two;
-  }
-}
-
-.section-two {
-  @extend .with-columns;
-
-  .desc-box {
-    @extend .two-from-three;
-  }
-
-  .list-box {
-    @extend .one-from-three;
-  }
-}
-
-.section-three {
-  @extend .with-columns;
-
-  .desc-box {
-    @extend .two-from-three;
-  }
-
-  .img-box {
-    @extend .one-from-three;
-  }
-}
-
-.section-four {
+.section-with-slider {
   article {
     @extend .with-columns;
   }
 
-  .desc-box {
-    @extend .one-from-three;
+  .article-with-big-img {
+    .desc-box {
+      @extend .one-from-three;
+    }
+
+    .img-box {
+      @extend .two-from-three;
+    }
   }
 
-  .img-box {
-    @extend .two-from-three;
+  .article-without-grid {
+    .desc-box {
+      margin-bottom: 2em;
+    }
   }
+
+  .article-with-small-img {
+    .desc-box {
+      @extend .two-from-three;
+    }
+
+    .img-box {
+      @extend .one-from-three;
+    }
+  }
+
 }
 
-footer section {
-  @extend .with-columns;
-  position: relative;
 
-  .about-box {
-    @extend .two-from-three;
-  }
-
-  .social-box {
-    @extend .one-from-three;
-  }
-
-  img {
-    float: left;
-    @include frame;
-    margin: 0 1em 1em 0;
-  }
-
-  strong {
-    font-size: 1.2em;
-  }
-
-  em {
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  #go-to-top {
-    @include dark-tooltip('top');
-    position: absolute;
-    right: 0;
-    bottom: -180px;
-  }
-}

@@ -1,0 +1,59 @@
+%section.section-with-grid
+  %h1 Section with Simple Grid
+
+  %article.article-with-list
+    .desc-box
+      :markdown
+        **Welcome on Case Study Template Demo Page. Here you can see all features in action. We can identify sections and articles here (after HTML5 semantic names). Section is the one with big header and can contain many articles. Each article can have different layout. Template contains simple grid system as in examples below. Articles can also be displayed one after another with help of build in Content Slider. You need to dive deeper in source to learn how to use it all but is not complicated. Enjoy!**
+
+        #{lorem.sentence}
+
+        **Grid 2/3 + 1/3 and list of items**
+
+        #{lorem.paragraph}
+
+    .list-box.list
+      %h2 Features
+      %ul
+        %li build with HAML, SASS & CoffeeScript
+        %li simple semantic grid
+        %li styles for lists and images with captions
+        %li nice typography
+        %li you can use Markdown
+        %li content slider
+        %li mobile friendly
+        %li author's section on the bottom
+        %li set of social options
+        %li completely open source!
+        %li<
+          you can use links 
+          %a{:href => 'https://github.com/krzysu/jquery.plugins'} like this one
+
+  %article.article-with-not-equal-cols
+    .img-box
+      %figure
+        %img{:src => lorem.image('300x350'), :alt => 'img'}
+        %figcaption
+          image caption
+
+    .desc-box
+      :markdown
+        **Grid 1/3 + 2/3 and image with caption**
+
+        #{lorem.paragraph}
+
+        #{lorem.paragraph}
+
+  %article.article-with-equal-cols
+    .desc-box
+      :markdown
+        **Grid 1/2 + 1/2 and image with caption**  
+
+        #{lorem.paragraph}
+
+        #{lorem.paragraph}
+
+    .img-box
+      %figure
+        %img{:src => lorem.image('430x300'), :alt => 'img'}
+        %figcaption image caption
