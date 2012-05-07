@@ -11,7 +11,7 @@ for demo [click here](http://krzysu.github.com/case.study.template/)
 -   nice typography thanks to Google Fonts API
 -   content slider if you want to display more articles in one section
 -   mobile friendly thanks to responsive design
--   author section on the bottom with set of social options (some [vector icons](http://www.alexpeattie.com/projects/justvector_icons/) by Alex Peattie
+-   author section on the bottom with set of social options (some [vector icons](http://www.alexpeattie.com/projects/justvector_icons/) by Alex Peattie)
 -   completely open source, available under the MIT licence!
 
 ## How to use?
@@ -28,6 +28,9 @@ for demo [click here](http://krzysu.github.com/case.study.template/)
 ## Pages using Case Study Template
 
 -   [Resfinity Hotel Case Study](http://portfolio.myviews.pl/resfinity_hotel_2012/)
+
+add your page here if you like and use this template  
+Thx!
 
 
 * * *
