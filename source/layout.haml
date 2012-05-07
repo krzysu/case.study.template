@@ -18,6 +18,7 @@
     :javascript
       document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/,'') + ' js';
 
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
     /[if lt IE 9]
       %script{:src => "http://html5shiv.googlecode.com/svn/trunk/html5.js"}
       = javascript_include_tag 'lib/selectivizr-min.js'
@@ -45,7 +46,6 @@
     .wrapper
       = yield
 
-    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
     = javascript_include_tag "application"
     = yield_content :js
 

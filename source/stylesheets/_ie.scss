@@ -1,0 +1,13 @@
+.ie8, .ie7 {
+  #go-to-author {
+    @include dark-tooltip;
+  }
+}
+
+.ie7 {
+  .pager li {
+    zoom: 1;
+    display: inline;
+    margin-right: 2px;
+  }
+}

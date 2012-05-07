@@ -4,6 +4,8 @@
   @include box-shadow(0 0 0 1px $color-base); 
   @include box-sizing(border-box);
   -moz-box-sizing: border-box;
+
+  border: 1px solid $color-base \9; // hack for IE8 and below
 }
 
 @mixin dark-tooltip($direction: 'none') {
