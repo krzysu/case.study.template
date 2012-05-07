@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7]> <html class="ie6 no-js"> <![endif]-->
+<!--[if IE 7]> <html class="ie7 no-js"> <![endif]-->
+<!--[if IE 8]> <html class="ie8 no-js"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class='no-js'>
+  <!--<![endif]-->
   <head>
-    <title>Case Study Title by Krzysztof Urbas</title>
+    <title>Case Study Template by Krzysztof Urbas</title>
     <meta charset='utf-8' />
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible' />
     <meta content='' name='description' />
     <meta content='' name='author' />
     <meta content='width=device-width,initial-scale=1' name='viewport' />
+    <!-- / check if JS is enabled in browser -->
+    <script type='text/javascript'>
+      //<![CDATA[
+document.documentElement.className=document.documentElement.className.replace(/\bno-js\b/,"")+" js"
+//]]>
+    </script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+    <!--[if lt IE 9]>
+      <script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'></script>
+      <script src="javascripts/lib/selectivizr-min.js" type="text/javascript"></script>
+    <![endif]-->
     <link href="http://fonts.googleapis.com/css?family=Bevan" media="screen" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Kameron:400,700" media="screen" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Francois+One" media="screen" rel="stylesheet" type="text/css" />
@@ -14,13 +30,13 @@
     
   </head>
   <body class='index'>
-    
-    <a href="http://github.com/krzysu/case.study.template"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/assets.github.com/img/abad93f42020b733148435e2cd92ce15c542d320/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub"></a>
-
+    <a href='http://github.com/krzysu/case.study.template'>
+      <img alt='Fork me on GitHub' src='https://a248.e.akamai.net/assets.github.com/img/abad93f42020b733148435e2cd92ce15c542d320/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67' style='position: absolute; top: 0; right: 0; border: 0;' />
+    </a>
     <div class='wrapper'>
       <header id='header-section'>
         <h1>Case Study Template</h1>
-        <h2>this is only a demo &amp; project is still in development</h2>
+        <h2>ready template for your next case study or portfolio page</h2>
         <h3>
           <span>
             by Krzysztof Urbas
@@ -28,145 +44,163 @@
           </span>
         </h3>
       </header>
-      <section class='section-one'>
-        <h1>Brief</h1>
-        <div class='desc-box'>
-          <p>Our aim was to build the new <strong>Hotel Booking application</strong> based on <strong>Hotel API</strong>. The team consisted of one back-end and one front-end (that was me) developer, and of course we had contact with Product Owner. I had <strong>some experience</strong> in building UX for Hotel Booking applications and we as company have <strong>some data</strong> based on our current working in production application. So we quite well knew what we are going to do, had some statistics what works and what not, but we also wanted to add some new, fresh features to <strong>get ahead of the competition</strong>.</p>
-        </div>
-        <div class='img-box'>
-          <img alt='img' src='http://placehold.it/590x400' />
-        </div>
-      </section>
-      <section class='section-two'>
-        <h1>Technology</h1>
-        <div class='desc-box'>
-          <p>Our current Hotel IBE (Internet Booking Engine) was build few years ago with redesign more than a two years ago. It was based on ASP.NET framework. In the new IBE we decided to use <strong>Rails as our backend framework</strong> together with a lot of <strong>helpfull frontend tools</strong> provided right out of the box: SASS (in fact I prefer SCSS syntax) with Compass, HAML and CoffeeScript with AssetPipeline. Next we decided to use jQuery (nothing special here), backbone.js (to keep client&#8217;s code organized) together with Handlebars as our <strong>client&#8217;s side templating engine</strong>. We also use Jasmine <strong>to test</strong> our front-end code.</p>
-          <img alt='img' src='http://placehold.it/590x200' />
-        </div>
-        <div class='list-box list'>
-          <h2>Front-end tools</h2>
-          <ul>
-            <li>AssetPipeline from Rails</li>
-            <li>HAML</li>
-            <li>SASS with Compass</li>
-            <li>CoffeeScript</li>
-            <li>jQuery</li>
-            <li>backbone.js & underscore.js</li>
-            <li>Handlebars.js</li>
-            <li>GoogleMaps API</li>
-            <li>Jasmine</li>
-            <li>
-              a few self written
-              <a href='https://github.com/krzysu/jquery.plugins'>jquery.plugins</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class='section-three'>
-        <h1>Phase 1. Planning</h1>
-        <div class='img-box'>
-          <img alt='img' src='http://placehold.it/280x360' />
-        </div>
-        <div class='desc-box'>
-          <p>We would like to take what worked in our current IBE and change what not. I made a <strong>comprehensive analysis</strong> of our competition&#8217;s apps (total of 11) like <a href='http://booking.com'>booking.com</a> or <a href='http://agoda.de'>agoda.de</a>. Most of them had similar features and layouts but there were also quite innovative solutions like <a href='http://www.google.com/hotelfinder/'>Google Hotel Finder</a> or <a href='http://www.hipmunk.com/hotels'>hipmunk.com</a>. We also knew, that despite the innovation, our <strong>target users</strong> (mainly Germans) are quite used to well known solutions for them. So we need to <strong>find a balance</strong>. We would like to push our users a bit forward but in the way they would still feel comfortable with our app.</p>
-          
-          <p>So I started <strong>sketching and noting</strong> all ideas for features and solutions, all that could be helpfull in the future of our project. We had the basic idea, we already knew the flow and how many steps we need to prepare for user to finish its task with our app. The <strong>two main challenges</strong> were Hotels Page, with list of all available hotels, and Hotel Page, with all the details of selected hotel and room selection.</p>
-        </div>
-      </section>
-      <section class='section-four'>
-        <h1>Phase 2. Prototyping</h1>
-        <article>
+      <section class='section-with-grid'>
+        <h1>Section with Simple Grid</h1>
+        <article class='article-with-list'>
           <div class='desc-box'>
-            <p>It was time to <strong>get our hands dirty</strong> with some coding. The first page of the flow was Start Page, consisting of search form, as minimal as possible. I pushed on removing all <strong>unnecessary fields</strong> because our goal here was to take users on Hotels Page as quick as possible.</p>
+            <p><strong>Welcome on Case Study Template Demo Page. Here you can see all features in action. We can identify sections and articles here (after HTML5 semantic names). Section is the one with big header and can contain many articles. Each article can have different layout. Template contains simple grid system as in examples below. Articles can also be displayed one after another with help of build in Content Slider. You need to dive deeper in source to learn how to use it all but is not complicated. Enjoy!</strong></p>
             
-            <p>As we were in prototyping phase I did <strong>minimal</strong> styling and basic layout, just to show functions of the elements.</p>
+            <p>Neque omnis perspiciatis recusandae est exercitationem vitae quis ratione dolor ut est dolore ratione fuga</p>
+            
+            <p><strong>Grid 2/3 + 1/3 and list of items</strong></p>
+            
+            <p>Enim suscipit eveniet aliquam nemo delectus dolor voluptates ea est velit quos dolor voluptatum incidunt. qui inventore earum atque deleniti ad voluptatem. inventore voluptas minus hic aliquam ut et dolore nulla tempora sed. voluptatem incidunt quibusdam repellendus dolore quos rerum sunt aliquam nobis quo dolores rerum et. nemo esse qui nihil qui est quis dolorem autem cumque qui. nam eligendi esse quidem. asperiores dolorum non delectus a molestias minus quasi officiis facere molestiae aut non eos</p>
+          </div>
+          <div class='list-box list'>
+            <h2>Features</h2>
+            <ul>
+              <li>build with HAML, SASS & CoffeeScript</li>
+              <li>simple semantic grid</li>
+              <li>styles for lists and images with captions</li>
+              <li>nice typography</li>
+              <li>you can use Markdown</li>
+              <li>content slider</li>
+              <li>mobile friendly</li>
+              <li>author's section on the bottom</li>
+              <li>set of social options</li>
+              <li>completely open source!</li>
+              <li>you can use links
+              <a href='https://github.com/krzysu/jquery.plugins'>like this one</a></li>
+            </ul>
+          </div>
+        </article>
+        <article class='article-with-not-equal-cols'>
+          <div class='img-box'>
+            <figure>
+              <img alt='img' src='http://placehold.it/300x350' />
+              <figcaption>
+                image caption
+              </figcaption>
+            </figure>
+          </div>
+          <div class='desc-box'>
+            <p><strong>Grid 1/3 + 2/3 and image with caption</strong></p>
+            
+            <p>Omnis tempora at blanditiis cumque quasi tenetur minima optio. nemo optio et eligendi quia quas sit dignissimos. vel qui eum maiores perferendis quaerat excepturi fugit natus perspiciatis earum tempora tempora est</p>
+            
+            <p>Architecto fugiat laborum repellat ut. necessitatibus officiis vel et quam iusto debitis eum id. saepe officiis hic consequatur dolorem blanditiis occaecati sint quis sit enim excepturi illum. quibusdam repudiandae culpa nulla ullam omnis eaque tempora quis enim est unde. ut saepe sequi temporibus quia voluptas nam ex enim accusantium distinctio qui et excepturi. hic voluptas quia laudantium vero blanditiis vel nemo neque qui blanditiis autem</p>
+          </div>
+        </article>
+        <article class='article-with-equal-cols'>
+          <div class='desc-box'>
+            <p><strong>Grid 1/2 + 1/2 and image with caption</strong></p>
+            
+            <p>Voluptas facilis necessitatibus ea facilis vitae est. facilis voluptatem occaecati omnis qui. aut quos mollitia earum labore et maxime necessitatibus aliquid similique accusantium hic. sed dolores aut reprehenderit</p>
+            
+            <p>Provident labore doloribus dolorem ullam voluptates sint. quisquam autem et architecto nisi quisquam et. ipsum necessitatibus explicabo odit et assumenda et officiis velit et odio. voluptatem eaque atque nobis tempora harum in tempora natus labore vitae cumque voluptate veritatis. pariatur nihil fugiat sed explicabo ipsum et magnam sunt</p>
           </div>
           <div class='img-box'>
             <figure>
-              <img alt='img' src='http://placehold.it/590x400' />
-              <figcaption>image of old and new start mask</figcaption>
+              <img alt='img' src='http://placehold.it/430x300' />
+              <figcaption>image caption</figcaption>
             </figure>
           </div>
         </article>
-        <article>
-          <div class='img-box'>
-            <img alt='img' src='http://placehold.it/590x350' />
-            <img alt='img' src='http://placehold.it/590x350' />
-          </div>
-          <div class='desc-box'>
-            <p>The second page (Hotels Page) was <strong>huge challenge</strong> as we had a lot of features to present here. The main aim of users on this page was to find best hotel for them, that fulfills all their criteria. I think that the best solution (theoretical) would be to display only one hotel, the one that <strong>user would be happy</strong> with, but to achieve this we would need to know all user needs and preferences. Ok, back to the point, we started with displaying list of available hotels, then added some sorting and filtering posibilities. Each hotel has a lot of attributes by which it could be categorized like rating, special deals, facilities, location etc. And we also need to display all of them for the users to decide. The important part of this page was <strong>map with the hotels</strong> but I will get back to it later. From the technical point of view, page is mainly rendered on the client&#8217;s side to make the <strong>interaction</strong> more smooth.</p>
-          </div>
-        </article>
-        <article>
-          <div class='desc-box'>
-            <p>The third page (Hotel page) was fully redesigned. I came to <strong>quite oposite idea</strong> than in our current IBE and in most of competition. Instead of displaying a lot of hotel&#8217;s detailed information in tabs, let&#8217;s display them one after the other in one long page and let&#8217;s add some <strong>handy page menu</strong> to navigate between the sections. I also redesigned the photo gallery.</p>
-          </div>
-          <div class='img-box'>
-            <img alt='img' src='http://placehold.it/590x350' />
-          </div>
-        </article>
-        <article>
-          <p>Ok, so we had prototypes of our two main challenges, we <strong>had approval</strong> of our Product Owner and some <strong>positive feedback</strong> from people not involved in project (as our low budget UX testing group). Next we decided to add some design, as the following steps were only a checkout process (I know that checkout steps are <strong>important</strong> but we decided to build them after first 3 steps would be ready).</p>
-        </article>
       </section>
-      <section class='section-five'>
-        <h1>Phase 3. Design</h1>
-        <div class='desc-box'>
-          <p>I am not a graphic designer (rather <strong>CSS3 designer</strong>), and I did a lot of designing for our current IBE, so I <strong>convinced</strong> our Product Owner (and Manager in the same person) that we should involve someone from outside of the company, a well skilled graphic designer with <strong>fresh look</strong> at our application.</p>
-          
-          <p>So one page after another we prepared beautiful and usable mockups. My cooperation with graphic designer began from specifying all requirements and contents of each page, then in <strong>short iteration</strong> we focused on single elements of pages, <strong>improving</strong> them till I was fully satisfied.</p>
-        </div>
-        <div class='img-box'>
-          <figure>
-            <img alt='img' src='http://placehold.it/590x200' />
-            <figcaption>image caption</figcaption>
-          </figure>
-          <figure>
-            <img alt='img' src='http://placehold.it/590x200' />
-            <figcaption>image caption</figcaption>
-          </figure>
-        </div>
-      </section>
-      <section class='section-six'>
-        <h1>Phase 4. Implementation</h1>
-        <div class='img-box'>
-          <img alt='img' src='http://placehold.it/590x400' />
-        </div>
-        <div class='desc-box'>
-          <p>We already had a lot of <strong>working code</strong> after prototyping phase. And we did not have much time <strong>till deadline</strong>. So while waiting for new designs from graphic designer, I was implementing the already accepted ones, <strong>changing prototypes into final product</strong>.</p>
-        </div>
-      </section>
-      <section class='section-seven'>
-        <h1>Highlights</h1>
-      </section>
-      <section class='section-eight'>
-        <h1>Summary</h1>
-        <div class='desc-box'>
-          <p>The project took <strong>about 3 months</strong>. We designed some more features than we were able to implement during that period, mainly because of technical resons (like Hotel API had not been supporting the feature yet). We left them for future iterations but <strong>the main flow was finished</strong>. We could switch our first users to new IBE and start <strong>Phase 5: Testing</strong>.</p>
-        </div>
-        <div class='img-box'>
-          <img alt='img' src='http://placehold.it/590x400' />
+      <section class='section-with-slider'>
+        <header>
+          <h1>Section with Content Slider</h1>
+          <ul class='pager' id='prototyping-slider-control'>
+            <li>
+              <a class='active' href='#prototyping-1'>1</a>
+            </li>
+            <li>
+              <a href='#prototyping-2'>2</a>
+            </li>
+            <li>
+              <a href='#prototyping-3'>3</a>
+            </li>
+            <li>
+              <a href='#prototyping-4'>4</a>
+            </li>
+          </ul>
+        </header>
+        <div id='prototyping-slider-body'>
+          <article class='article-with-big-img' id='prototyping-1'>
+            <div class='desc-box'>
+              <p><strong>Check page_controller.js.coffee file to see how to use this</strong></p>
+              
+              <p>Aliquid cum quia reiciendis perspiciatis doloremque voluptatibus aspernatur sed officiis molestiae facere. nulla suscipit laboriosam quibusdam quos consequuntur. eius consequatur quis eveniet expedita odio soluta modi et aliquam et totam quia veniam. numquam dolor laudantium consequatur voluptas et sunt laborum sit dicta consequatur dolore quidem et ut. at repellendus nesciunt architecto nihil rerum et qui rem molestias neque fugiat</p>
+              <a class='button' href='#prototyping-2'>next &raquo;</a>
+            </div>
+            <div class='img-box'>
+              <figure>
+                <img alt='img' src='http://placehold.it/590x300' />
+                <figcaption>image caption</figcaption>
+              </figure>
+            </div>
+          </article>
+          <article class='article-with-big-img' id='prototyping-2'>
+            <div class='img-box'>
+              <figure>
+                <img alt='img' src='http://placehold.it/590x300' />
+                <figcaption>image caption</figcaption>
+              </figure>
+            </div>
+            <div class='desc-box'>
+              <p><strong>Each article can have its own layout</strong></p>
+              
+              <p>Dolor repellendus dolorem voluptatem magnam sit dolores fuga qui iusto est sequi sit magnam quo. dicta neque et blanditiis. reiciendis consequatur sint et deleniti voluptatem vel neque qui. rerum consequatur magni beatae ipsam ratione repudiandae aut blanditiis et</p>
+              <a class='button' href='#prototyping-3'>next &raquo;</a>
+            </div>
+          </article>
+          <article class='article-without-grid' id='prototyping-3'>
+            <div class='desc-box'>
+              <p><strong>If you do not specify a grid for an article then it will be full screen</strong></p>
+              
+              <p>Velit laboriosam veniam et quia vel harum aperiam rerum deserunt est possimus consequatur repellat in. ipsa laborum alias voluptatem dignissimos. ut velit quo et voluptatibus ipsam delectus delectus labore porro quia autem voluptatem nostrum alias. vitae facere tempora illo. minus ad iusto molestiae nobis qui architecto. doloribus ut quia dicta tempore aut consequuntur distinctio</p>
+              <a class='button' href='#prototyping-4'>next &raquo;</a>
+            </div>
+            <div class='img-box'>
+              <figure>
+                <img alt='img' src='http://placehold.it/900x200' />
+                <figcaption>image caption</figcaption>
+              </figure>
+            </div>
+          </article>
+          <article class='article-with-small-img' id='prototyping-4'>
+            <div class='desc-box'>
+              <p><strong>That&#8217;s all, contact me if you have any problems</strong></p>
+              
+              <p>Sed est velit animi. blanditiis eius expedita rerum eos a delectus tempora et quos consequatur. neque velit molestias vel. iusto suscipit temporibus sit culpa qui voluptates pariatur provident nostrum temporibus. illum qui nobis qui vel. quis quia nostrum debitis voluptates eveniet dolorem est tempora aut adipisci aut</p>
+              
+              <p>Molestiae nihil eveniet voluptas vel placeat ab fugit nostrum iusto. quis quod et velit corporis recusandae voluptatem laudantium enim tenetur impedit omnis. fugit accusamus minus excepturi exercitationem</p>
+            </div>
+            <div class='img-box'>
+              <figure>
+                <img alt='img' src='http://placehold.it/300x350' />
+                <figcaption>image caption</figcaption>
+              </figure>
+            </div>
+          </article>
         </div>
       </section>
       <footer>
-        <h2>Do you like it?</h2>
+        <h2 class='separator'>Do you like it?</h2>
         <section>
           <a class='internal' href='#header-section' id='go-to-top'>back to top</a>
           <div class='about-box' id='about-section'>
-            <h1>About</h1>
+            <h1>Author</h1>
             <article>
               <img alt='author photo' src='http://www.gravatar.com/avatar/c06a7fc686bc021258d1bf34c3397b6e?s=135' />
               <p><strong>Krzysztof Urbas</strong>, front-end programmer, UX designer, bass player.</p>
               
-              <p>I am enthusiastic web developer, who can never stop exploring news in web-world. I am continually expand my skills and I am never afraid of new technologies. My everyday work consist of getting to know the problem, finding solution, building prototypes and then programming web front-end. I use <em>HTML5</em> and all <em>CSS3</em> power supported by <em>JavaScript</em> magic to develop nice looking, usable and human friendly interfaces. I especially fond of Ruby world because of a lot nice tools which make my work easier, like <em>HAML, SASS</em> and <em>CoffeeScript</em>. I am also <em>startups</em> and agile project management fan.</p>
+              <p><em>Put your awesome bio here</em>. Eos enim et eius quo vel quam labore ea et qui dolorum non suscipit. dignissimos dolor ut et dicta hic atque eligendi. enim id eum omnis saepe voluptas est consequatur sit et. et reprehenderit dolorem est. aut velit eum eligendi eos excepturi pariatur maxime facilis aut ut qui ut. sed error deserunt nobis ipsum qui sint aut praesentium consequatur voluptas aut voluptas officiis. <em>There are more social icons available, check in images folder</em>.</p>
             </article>
           </div>
           <div class='social-box'>
             <h1>Contact</h1>
             <ul class='social-links'>
-              <li>
-                <span class='email' style='unicode-bidi:bidi-override;direction:rtl;'>moc.liamg@lp.usyzrk</span>
-              </li>
               <li>
                 <a class='twitter' href='http://twitter.com/krzysu'>follow me on twitter</a>
               </li>
@@ -174,10 +208,10 @@
                 <a class='github' href='http://github.com/krzysu'>fork me on github</a>
               </li>
               <li>
-                <a class='zerply' href='http://zerply.com/krzysu'>my résumé on zerply</a>
+                <a class='website' href='http://myviews.pl'>visit my website</a>
               </li>
               <li>
-                <a class='website' href='http://myviews.pl'>visit my website</a>
+                <a class='soundcloud' href='http://soundcloud.com/sbsband'>listen to my band</a>
               </li>
             </ul>
           </div>
@@ -188,11 +222,11 @@
         <a href='https://github.com/krzysu/case.study.template'>case.study.template</a>
         by Krzysztof Urbas (@krzysu)
         |
+        some
         <a href='http://www.alexpeattie.com/projects/justvector_icons/'>icons</a>
         by Alex Peattie (@alexpeattie)
       </small>
     </div>
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
     <script src="javascripts/application.js" type="text/javascript"></script>
     
   </body>
