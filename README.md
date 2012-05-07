@@ -1,7 +1,7 @@
 # Case Study Template
 
 __ready template for your next case study or portfolio page__     
-for demo [click here](http://krzysu.github.com/case.study.template/)  
+for demo and some hints how to use the features [click here](http://krzysu.github.com/case.study.template/)  
 
 ## Features
 
