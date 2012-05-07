@@ -5,7 +5,6 @@ class CaseStudyController
   constructor: ->
     @initInternalLinks()
 
-    @sliderHighlights = new CaseStudy.ContentSlider('#highlights-slider-control', '#highlights-slider-body')
     @sliderPrototyping = new CaseStudy.ContentSlider('#prototyping-slider-control', '#prototyping-slider-body')
 
   initInternalLinks: ->

@@ -1,6 +1,6 @@
 %section.section-four
   %header
-    %h1 Phase 2. Prototyping
+    %h1 Section With Many Articles
     %ul.pager#prototyping-slider-control
       %li
         %a.active{:href => '#prototyping-1'} 1
@@ -15,48 +15,43 @@
 
     %article#prototyping-1
       .desc-box
-        :markdown
-          It was time to **get our hands dirty** with some coding. The first page of the flow was Start Page, consisting of search form, as minimal as possible. I pushed on removing all **unnecessary fields** because our goal here was to take users on Hotels Page as quick as possible.
-
-          As we were in prototyping phase I did **minimal** styling and basic layout, just to show functions of the elements.
+        %p= lorem.paragraph
 
         %a.button{:href => '#prototyping-2'} next &raquo;
       
       .img-box
         %figure
-          %img{:src => image_path('04-1.jpg'), :alt => 'img'}
-          %figcaption image of old and prototype of new start mask
+          %img{:src => lorem.image('590x300'), :alt => 'img'}
+          %figcaption image caption
 
     %article#prototyping-2
+      .img-box
+        %figure
+          %img{:src => lorem.image('590x300'), :alt => 'img'}
+          %figcaption image caption
+
       .desc-box
-        :markdown
-          The second page (Hotels Page) was **huge challenge** as we had a lot of features to present here. The main aim of users on this page was to find best hotel for them, that fulfills all their criteria. We started with displaying list of available hotels, then added some sorting and filtering posibilities. Each hotel has a lot of attributes by which it could be categorized like rating, special deals, facilities, location etc. And we also need to display all of them for the users to decide. The important part of this page was **map with the hotels** but I will get back to it later. From the technical point of view, page is mainly rendered on the client's side to make the **interaction** more smooth.
+        %p= lorem.paragraph
 
         %a.button{:href => '#prototyping-3'} next &raquo;
 
-      .img-box
-        %figure
-          %img{:src => image_path('04-2.jpg'), :alt => 'img'}
-          %figcaption prototype of Hotels Page with map
-
     %article#prototyping-3
       .desc-box
-        :markdown
-          The third page (Hotel page) was fully redesigned. I came to **quite oposite idea** than in our current IBE and in most of competition. Instead of displaying a lot of hotel's detailed information in tabs, let's display them one after the other in one long page and let's add some **handy page menu** to navigate between the sections. I also redesigned the photo gallery.
+        %p= lorem.paragraph
 
         %a.button{:href => '#prototyping-4'} next &raquo;
-
+      
       .img-box
         %figure
-          %img{:src => image_path('04-3.jpg'), :alt => 'img'}
-          %figcaption prototype of single Hotel Page
+          %img{:src => lorem.image('590x300'), :alt => 'img'}
+          %figcaption image caption
           
     %article#prototyping-4
-      .desc-box
-        :markdown
-          Ok, so we had prototypes of our two main challenges, we **had approval** of our Product Owner and some **positive feedback** from people not involved in project (as our low budget UX testing group). Next we decided to add some design, as the following steps were only a checkout process (I know that checkout steps are **important** but we decided to build them after first 3 steps would be ready).
-
       .img-box
         %figure
-          %img{:src => image_path('04-4.jpg'), :alt => 'img'}
-          %figcaption screen of Hotel List Page from our old application
+          %img{:src => lorem.image('590x300'), :alt => 'img'}
+          %figcaption image caption
+
+      .desc-box
+        %p= lorem.paragraph
+

@@ -7,7 +7,7 @@
   <!--<![endif]-->
 
   %head
-    %title Resfinity Hotel 2012 Case Study by Krzysztof Urbas
+    %title Case Study Template by Krzysztof Urbas
     %meta{:charset => "utf-8"}
     %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
     %meta{:content => "", :name => "description"}
@@ -28,21 +28,11 @@
     = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Francois+One"
     = stylesheet_link_tag "styles"
     = yield_content :head
-  
-    // google analytics
-    :javascript
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-9904630-14']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
 
   %body{:class => page_classes}
+    %a{:href => "http://github.com/krzysu/case.study.template"}
+      %img{:alt => "Fork me on GitHub", :src => "https://a248.e.akamai.net/assets.github.com/img/abad93f42020b733148435e2cd92ce15c542d320/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67", :style => "position: absolute; top: 0; right: 0; border: 0;"}/
+
     .wrapper
       = yield
 
